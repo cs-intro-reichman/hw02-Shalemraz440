@@ -4,6 +4,16 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
+		int max = 0;
+		while (max < 10) {
+			int rand = (int) (Math.random() * 10);
+			if (rand >= max) {
+				System.out.println(rand);
+			}
+			else {
+				break;
+			}
+			max = rand; 
+		}
 	}
 }
